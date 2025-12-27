@@ -10,11 +10,16 @@ To write a Python program that calculates the **sum of all elements** in a list.
 
 ## 🧾 Program
 
-Add code here
-
+```
+num=[1,2,3,4,5,6,7,8,9,10]
+total=sum(num)
+print("The sum of the numbers in the list is:", total)
+```
 ## Output
-
+![alt text](<Screenshot 2025-12-27 102816.png>)
 ## Result
+The program is executed successfully.
+
 # Regex in Python: Filter Words Without the Letter 'e'
 
 ## 🎯 Aim
@@ -31,10 +36,17 @@ To write a Python program that filters out and returns all elements from a list 
 5. Print the final filtered list.
 
 ## 🧾 Program
-Add code here
-## Output
+```
+import re
+items=['goal','new','user','sit','eat','dinner']
+filter=[item for item in items if re.match(r'^((?!e).)*$',item)]
+print(filter)
+```
 
+## Output
+![alt text](<Screenshot 2025-12-27 102851.png>)
 ## Result
+The program is executed successfully.
 
 # Module-3
 # 🧹 Strings-Remove Nth Index Character from a String
@@ -53,11 +65,23 @@ To write a Python program that accepts a string and removes the character at a s
 8. Print the final result.
 
 ## 💻 Program
-Add Code Here
+```
+def remove(str):
+    n = int(input("Enter the index to remove: "))
+    a = ""
+    for j in range(len(str)):
+        if j != n:
+            a += str[j]
+    return a
+
+str1 = input("Enter a string: ")
+print("Modified string:", remove(str1))
+```
 
 ## Output
-
+![alt text](<Screenshot 2025-12-27 102954.png>)
 ## Result
+The program is executed successfully.
 
 # Strings-Palindrome Check in Python (Without Built-in Functions)
 
@@ -74,11 +98,19 @@ To write a Python program to check whether the string `"google"` is a **palindro
 
 ## 🧾 Program
 
-Add code here
+```
+str='google'
+rev=str[::-1]
+if str==rev:
+    print("The given string is a palindrome")
+else:
+    print("The given string is not a palindrome")
+```
 
 ## Output
-
+![alt text](<Screenshot 2025-12-27 103030.png>)
 ## Result
+The program is executed successfully.
 
 # Tuple in Python: Check Element Existence
 
@@ -92,8 +124,13 @@ To write a Python program that checks if the element `'n'` and the element `8` e
 4. Print the results.
 
 ## 🧾 Program
-Add code here
+```
+tuple1=(2,4,6,8,'n','o','t','e')
+print('n' in tuple1)
+print(8 in tuple1)
+```
 
 ## Output
-
+![alt text](<Screenshot 2025-12-27 103111.png>)
 ## Result
+The program is executed successfully.
